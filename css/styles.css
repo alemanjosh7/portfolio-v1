@@ -12,6 +12,7 @@
     --second-font: 'Saira Extra Condensed', sans-serif;
     --third-font: 'Noto Sans JP', sans-serif;
     --fourth-font: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --main-color: rgb(4, 85, 207);
 }
 
 body {
@@ -19,17 +20,23 @@ body {
 }
 
 .navbar-brand span {
-    font-family: var(--third-font);
+    font-family: var(--second-font);
+    font-size: 30px;
+    font-weight: 300;
 }
 
-.navbar-nav a{
-    font-family: var(--fourth-font);
+.navbar-nav a {
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
 }
 
-a{
+a {
     font-family: var(--fourth-font);
+}
+
+.subheading {
+    font-size: 19px;
 }
 
 .resume-section h1 {
@@ -41,6 +48,7 @@ a{
 
 .resume-section p {
     color: #868e96;
+    font-size: 17px;
     font-family: var(--fourth-font);
 }
 
@@ -53,7 +61,7 @@ a{
     align-items: center;
     text-align: center;
     font-size: 18px;
-    background-color: rgb(4, 85, 207);
+    background-color: var(--main-color);
 }
 
 h1 {
@@ -71,9 +79,25 @@ p {
     width: 72%;
 }
 
+.social-icons a i {
+    font-size: 2rem;
+    /* border: #fff; */
+    /* background: #868e96; */
+    border-radius: 50px;
+    padding: 15px;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.social-icons a i:hover {
+    background-color: rgb(6, 106, 255);
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
 @media only screen and (max-width: 992px) {
     .fix {
-        margin-left: 0;
+        margin-left: 1rem;
         width: 100%;
         margin-top: 5rem;
 
