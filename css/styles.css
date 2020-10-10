@@ -149,3 +149,7 @@ ul {
 .list-item i {
     color: rgb(25, 161, 48);
 }
+
+.progress{
+    width: 80%;
+}
